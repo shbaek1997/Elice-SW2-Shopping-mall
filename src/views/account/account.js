@@ -1,10 +1,3 @@
-import { navTransition } from '../navTransition/navTransition.js';
+import { common_nav } from "../common_nav/common_nav.js";
 
-navTransition('account').then( isLogined => {
-    if (!isLogined) {
-        alert('로그인이 필요한 페이지 입니다...');
-        window.location.href = '/';
-    }
-});
-
-
+common_nav('account');
